@@ -1,0 +1,36 @@
+{
+  "routes": [
+    {
+      "route_id": "R01",
+      "from": "Jenin",
+      "to": "AAUP",
+      "departure": "07:30",
+      "return": "16:00",
+      "capacity": 30
+    },
+    {
+      "route_id": "R02",
+      "from": "Nablus",
+      "to": "AAUP",
+      "departure": "07:00",
+      "return": "16:00",
+      "capacity": 25
+    },
+    {
+      "route_id": "R03",
+      "from": "Tulkarm",
+      "to": "AAUP",
+      "departure": "07:15",
+      "return": "16:00",
+      "capacity": 35
+    },
+    {
+      "route_id": "R04",
+      "from": "Qalqilya",
+      "to": "AAUP",
+      "departure": "07:45",
+      "return": "16:00",
+      "capacity": 20
+    }
+  ]
+}
