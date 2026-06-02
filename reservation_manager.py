@@ -17,7 +17,15 @@ class ReservationManager:
 
      print("reversation saved")   
   def cancel(self,reservations:list,res_id:str)->list:
-    pass 
+    found = False 
+    for r in reservations:
+       if r ["res_id"]==res_id:
+          found =True
+       if found == False:
+          raise ValueError("reservations not found")  
+       updated = [r for r in reservations if r["res_id"]!=res_id]
+       print("reversation canceled")
+       return updated
   def get_by_route(self,reservations:list,route_id:str)->list:
      return [r for r in reservations if r["route_id"]==route_id]
   
