@@ -8,8 +8,14 @@ class ReservationManager:
        return []    
      
   def save_reservations(self,reservations:list,filepath:str)->None :
-     pass  
+     fieldnames=["res_id", "student_name", "student_id", "route_id", "date"] 
+   #open csv file 
+     with open(filepath,"w",newline="") as file:
+        csvFile = csv.DictWriter(file,fieldnames=fieldnames)
+        csvFile.writeheader()
+        csvFile.writerows(reservations)
 
+     print("reversation saved")   
   def cancel(self,reservations:list,res_id:str)->list:
     pass 
   def get_by_route(self,reservations:list,route_id:str)->list:
