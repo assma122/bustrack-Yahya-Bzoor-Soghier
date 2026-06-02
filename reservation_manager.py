@@ -19,7 +19,9 @@ class ReservationManager:
   def cancel(self,reservations:list,res_id:str)->list:
     pass 
   def get_by_route(self,reservations:list,route_id:str)->list:
-    pass      
+     return [r for r in reservations if r["route_id"]==route_id]
+  
+      
   def book(self,reservations:list,routes:list 
            ,student_name:str,student_id:str,route_id:str,date:str,bus_manager)->list:
        pass 
