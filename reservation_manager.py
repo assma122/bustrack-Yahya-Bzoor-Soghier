@@ -1,7 +1,12 @@
 import csv 
 class ReservationManager: 
   def load_reservations(self,filepath:str)-> list:
-    pass
+    try:
+        with open(filepath,"r") as file:
+           return list(csv.DictReader(file))
+    except FileNotFoundError:
+       return []    
+     
   def save_reservations(self,reservations:list,filepath:str)->None :
      pass  
 
