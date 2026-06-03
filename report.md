@@ -8,7 +8,7 @@ The Smart Bus Tracking System manages and optimizes university bus transport. St
 |---|---|---|
 | json | built-in | Load and save bus routes |
 | csv | built-in | Load and save student reservations |
-| matplotlib | write version here | Create occupancy and reservation charts |
+| matplotlib | 3.8.2 | Create occupancy and reservation charts |
 
 ## 4. Module Descriptions
 
