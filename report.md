@@ -1,5 +1,6 @@
 ## 2. Project Description
-The Smart Bus Tracking System manages and optimizes university bus transport. Students can secure seat reservations and track real-time occupancy. The system analyzes route and passenger info to improve scheduling and make commutes smoother. It helps improve efficiency, reduce wait times, and make trips easier.
+
+The BusTrack app helps with booking and tracking bus rides for students. It deals with route info, reservations, and empty seats. Users can upload route details using a JSON file and track reservations through a CSV file. Also, it figures out how many open seats there are and shows route information. This tool is central to the "AAUP Bus Tracking and Reservation system" our  senior project ,it handles data management and reservations. Plus, it offers some analysis and visuals on the reservation stats. It uses json and csv for handling data, and matplotlib to create charts showing bus occupancy and route breakdowns.
 
 ## 3. Libraries Used
 
@@ -12,7 +13,8 @@ The Smart Bus Tracking System manages and optimizes university bus transport. St
 ## 4. Module Descriptions
 
 ### bus_manager.py
-This module manages bus route data. It loads routes from the JSON file, finds routes by route ID, calculates available seats, and displays route availability.
+This module manges of all bus route data and keeps track of seat availability.It loads route information from a JSON file and uses route IDs as unique identifiers to fetch info.It calculates available seats too and displays routes in a formatted table. This shows all the routes based on reservations and the chosen date.
+
 
 ### reservation_manager.py
 The bus reservation system module. It loads reservations from a CSV file, saves updated reservations, adds new reservations, cancels existing reservations, and filters the reservations according to routes. The key method here is the book() method because it checks whether the route exists, prevents duplicate reservations, checks if there are enough seats, and then creates the new reservation.
@@ -99,7 +101,7 @@ Reservation removed successfully.
 ## 8. Challenges & What You Learned
 
 ### Lona Yahya
-Write Lona challenge here.
+I faced a challenge  where seat bookings weren't calculating right for each route because the counter wasn't resetting within the loop. So, I fixed it by resetting the booked variable for each route and properly filtering reservations based on route_id and date
 
 ### Asma Bzoor
 The difficult task here was booking validation. The students must not be allowed to book the same route on the same date more than one time, and before a student can book, the available seats must be checked. To check if a student booked a route on a date more than once, the reservations list is checked. Before reservation is allowed, seat availability is also checked using the available_seats() method from BusManager.
