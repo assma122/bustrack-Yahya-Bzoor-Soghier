@@ -94,7 +94,7 @@ Reservation removed successfully.
 
 | Student | ID | Files | Commit Count | GitHub Username |
 |---|---|---|---|---|
-| Lona Yahya | 202210668 | bus_manager.py, create_sample_data.py | write count | @username |
+| Lona Yahya | 202210668 | bus_manager.py, create_sample_data.py | 4 | @username |
 | Asma Bzoor | 202210754 | reservation_manager.py, requirements.txt | 9 | @assma122 |
 | Jana Soghier | 202210337 | visualizer.py, main.py | 2 | @janasoghir |
 
