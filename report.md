@@ -1,5 +1,5 @@
 ## 2. Project Description
-
+The Smart Bus Tracking System manages and optimizes university bus transport. Students can secure seat reservations and track real-time occupancy. The system analyzes route and passenger info to boost scheduling and make commutes smoother. So, it improves efficiency while cutting down wait times and making trips easier.
 
 
 ## 3. Libraries Used
@@ -82,7 +82,7 @@ date: 2026-06-03
 |---|---|---|---|---|
 | Lona Yahya | 202210668 | bus_manager.py, create_sample_data.py | write count | @username |
 | Asma Bzoor | 202210754 | reservation_manager.py, requirements.txt |  6| @assma122 |
-| Jana Soghier | 202210337 | visualizer.py, main.py | write count | @username |
+| Jana Soghier | 202210337 | visualizer.py, main.py | 2 | @janasoghir |
 
 ## 8. Challenges & What You Learned
 
@@ -94,6 +94,7 @@ The difficult task here was booking validation. The students must not be allowed
 
 ### Jana Soghier
 Handling system integration and data visualization was super tough. Merging the bus management, reservation systems, and data generation modules meant meticulously organizing `main.py` for seamless data flow. Building `visualizer.py` involved handling raw reservation logs to calculate route popularity and bus occupancy rates dynamically. 
+
 ## 9. How to Run
 
 ### Install dependencies
